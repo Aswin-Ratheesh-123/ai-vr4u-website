@@ -1,0 +1,89 @@
+.consultation{
+padding:100px 20px;
+background:white;
+}
+
+.consultation-container{
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+.consultation h2{
+font-size:36px;
+color:#0a2540;
+margin-bottom:10px;
+}
+
+.consultation-sub{
+color:#64748b;
+margin-bottom:60px;
+}
+
+/* grid */
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+/* card */
+
+.process-card{
+background:#f8fafc;
+border-radius:14px;
+padding:35px 25px;
+position:relative;
+border:1px solid #e2e8f0;
+transition:.3s;
+}
+
+.process-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* icon */
+
+.process-icon{
+font-size:28px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+/* title */
+
+.process-card h3{
+color:#0f172a;
+margin-bottom:10px;
+}
+
+/* description */
+
+.process-card p{
+font-size:14px;
+color:#64748b;
+line-height:1.6;
+}
+
+/* number */
+
+.process-number{
+position:absolute;
+top:15px;
+right:20px;
+font-size:20px;
+color:#cbd5e1;
+font-weight:600;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.consultation h2{
+font-size:28px;
+}
+
+}

@@ -1,0 +1,218 @@
+/* section */
+
+.software-preview{
+padding:40px 20px;
+background:#f8fafc;
+}
+
+/* container */
+
+.software-container{
+max-width:1200px;
+margin:auto;
+}
+
+/* header */
+
+.software-header{
+margin-bottom:50px;
+}
+
+.software-header h2{
+font-size:38px;
+font-weight:700;
+color:#0f172a;
+margin-bottom:12px;
+letter-spacing:-0.5px;
+}
+
+.software-header p{
+color:#64748b;
+font-size:16px;
+line-height:1.6;
+max-width:600px;
+}
+
+/* card */
+
+.software-card{
+background:#ffffff;
+border-radius:18px;
+padding:32px;
+
+border:1px solid #e2e8f0;
+
+box-shadow:0 8px 30px rgba(0,0,0,0.05);
+transition:all .35s ease;
+
+display:flex;
+flex-direction:column;
+}
+
+.software-card:hover{
+transform:translateY(-10px);
+border-color:#2563eb;
+box-shadow:0 20px 50px rgba(37,99,235,0.15);
+}
+
+/* card top */
+
+.card-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:18px;
+}
+
+/* icon */
+
+.service-icon{
+font-size:26px;
+color:#2563eb;
+background:#eff6ff;
+border-radius:12px;
+padding:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* number */
+
+.card-number{
+font-size:22px;
+font-weight:600;
+color:#cbd5e1;
+}
+
+/* title */
+
+.software-card h3{
+font-size:20px;
+font-weight:600;
+color:#0f172a;
+margin-bottom:8px;
+}
+
+/* tech */
+
+.tech{
+font-size:13px;
+font-weight:500;
+color:#2563eb;
+margin-bottom:12px;
+letter-spacing:.3px;
+}
+
+/* description */
+
+.desc{
+font-size:14px;
+color:#475569;
+line-height:1.6;
+margin-bottom:22px;
+flex-grow:1;
+}
+
+/* button */
+
+.card-btn{
+background:#2563eb;
+color:#ffffff;
+
+border:none;
+padding:10px 22px;
+
+border-radius:25px;
+font-size:13px;
+font-weight:500;
+
+cursor:pointer;
+transition:all .3s ease;
+
+align-self:flex-end;
+}
+
+.card-btn:hover{
+background:#1d4ed8;
+transform:translateY(-2px);
+}
+
+/* view more button */
+
+
+.view-button{
+display:flex;
+justify-content:center;
+}
+
+.card-btnn{
+margin-top:30px;
+
+background:#0f172a;
+color:white;
+
+border:none;
+padding:12px 28px;
+
+border-radius:30px;
+font-size:14px;
+font-weight:500;
+
+cursor:pointer;
+transition:.3s;
+
+
+}
+
+.card-btnn:hover{
+background:#1e293b;
+}
+
+/* swiper */
+
+.swiper{
+padding-bottom:30px;
+}
+
+.swiper-slide{
+display:flex;
+justify-content:center;
+}
+
+/* tablet */
+
+@media(max-width:992px){
+
+.software-header h2{
+font-size:32px;
+}
+
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+.software-preview{
+padding:60px 20px;
+}
+
+.software-header h2{
+font-size:26px;
+}
+
+.software-header p{
+font-size:14px;
+}
+
+.software-card{
+padding:24px;
+}
+
+.service-icon{
+font-size:22px;
+padding:8px;
+}
+
+}
