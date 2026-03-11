@@ -5,7 +5,6 @@ import SoftwarePreview from "./SoftwarePreview";
 import CyberSecurityPreview from "./CyberSecurityPreview";
 import InfrastructurePreview from "./InfrastructurePreview";
 import ConsultationProcess from "./ConsultationProcess";
-import FounderPreview from "./FounderPreview";
 import HomeCarousel from "./HomeCarousel";
 
 function Home() {
@@ -21,7 +20,7 @@ function Home() {
 
     return () => clearInterval(interval);
 
-  }, []);
+  }, [words.length]);
 
   return (
 

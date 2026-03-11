@@ -11,10 +11,6 @@ import InfrastructureServices from "./pages/InfrastructureServices";
 import FounderInfo from "./pages/FounderInfo";
 
 
-
-import Services from "./pages/Services";
-import Founder from "./pages/Founder";
-
 function App() {
   return (
     <Router>

@@ -7,7 +7,6 @@ import {
     FaUserLock,
     FaDatabase,
     FaUserSecret,
-    FaLock,
     FaSearch,
     FaLaptopCode,
     FaServer,
