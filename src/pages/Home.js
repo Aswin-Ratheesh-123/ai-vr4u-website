@@ -7,6 +7,13 @@ import InfrastructurePreview from "./InfrastructurePreview";
 import ConsultationProcess from "./ConsultationProcess";
 import HomeCarousel from "./HomeCarousel";
 
+import {
+  FaShieldAlt,
+  FaLock,
+  FaBug,
+  FaUserSecret
+} from "react-icons/fa";
+
 function Home() {
 
   const words = ["Softwares", "Cyber Security", "IT Services"];
@@ -31,6 +38,8 @@ function Home() {
       <section className="hero">
 
         <div className="hero-container">
+
+          {/* TEXT CONTENT */}
 
           <div className="hero-content">
 
@@ -80,6 +89,18 @@ function Home() {
 
           </div>
 
+
+          {/* CYBER SECURITY ICONS */}
+
+          <div className="hero-visual">
+
+            <div className="tech-card"><FaShieldAlt /></div>
+            <div className="tech-card"><FaLock /></div>
+            <div className="tech-card"><FaBug /></div>
+            <div className="tech-card"><FaUserSecret /></div>
+
+          </div>
+
         </div>
 
       </section>
@@ -101,16 +122,10 @@ function Home() {
         </div>
 
         <SoftwarePreview />
-
         <CyberSecurityPreview />
-
         <InfrastructurePreview />
-
         <ConsultationProcess />
-
         <HomeCarousel />
-
-
 
       </section>
 
