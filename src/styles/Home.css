@@ -63,7 +63,7 @@
 
 .hero-outline {
     display: block;
-    -webkit-text-stroke: 2px #2563eb;
+    -webkit-text-stroke: 2px #000000;
     color: transparent;
 }
 
