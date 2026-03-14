@@ -1,5 +1,6 @@
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
+import { FaWhatsapp, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -20,9 +21,36 @@ function Footer() {
             technology landscape.
           </p>
 
-        
+          <div className="footer-social">
+
+            <a
+              href="mailto:aivr4usolutions@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+
+            <a
+              href="https://wa.me/919645310212"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+
+          </div>
 
         </div>
+
 
         {/* Quick Links */}
         <div className="footer-section">
@@ -47,6 +75,7 @@ function Footer() {
 
         </div>
 
+
         {/* Expertise */}
         <div className="footer-section">
 
@@ -68,6 +97,7 @@ function Footer() {
 
         </div>
 
+
         {/* Contact */}
         <div className="footer-section">
 
@@ -75,17 +105,34 @@ function Footer() {
 
           <ul className="footer-contact">
 
-            <li>Email: aivr4usolutions@gmail.com</li>
+            <li>
+              Email:
+              <a href="mailto:aivr4usolutions@gmail.com">
+                aivr4usolutions@gmail.com
+              </a>
+            </li>
 
-          
+            <li>
+              WhatsApp:
+              <a
+                href="https://wa.me/919645310212"
+                target="_blank"
+                rel="noreferrer"
+              >
+                +91 9645310212
+              </a>
+            </li>
 
-            <li>AI- VR4U SOLUTIONS</li>
+            <li>AI-VR4U SOLUTIONS</li>
 
           </ul>
 
         </div>
 
       </div>
+
+
+      {/* Bottom */}
 
       <div className="footer-bottom">
 

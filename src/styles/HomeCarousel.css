@@ -1,10 +1,10 @@
-.home-carousel {
+/* .home-carousel {
     padding: 50px 0;
     background: #ffffff;
     overflow: hidden;
 }
 
-/* ROW */
+
 
 .carousel-row {
     overflow: hidden;
@@ -12,7 +12,6 @@
     margin: 20px 0;
 }
 
-/* TRACK */
 
 .carousel-track {
     display: flex;
@@ -23,19 +22,18 @@
     animation-iteration-count: infinite;
 }
 
-/* LEFT animation */
+
 
 .carousel-row.left .carousel-track {
     animation-name: scrollLeft;
 }
 
-/* RIGHT animation */
+
 
 .carousel-row.right .carousel-track {
     animation-name: scrollRight;
 }
 
-/* ITEM */
 
 .carousel-item {
     display: flex;
@@ -62,7 +60,6 @@
     transform: translateY(-3px);
 }
 
-/* ICON */
 
 .carousel-icon {
     font-size: 18px;
@@ -73,7 +70,7 @@
     color: white;
 }
 
-/* ANIMATIONS */
+
 
 @keyframes scrollLeft {
 
@@ -115,7 +112,7 @@
     display: inline-block;
 }
 
-/* underline accent */
+
 
 .carousel-header h2::after {
     content: "";
@@ -137,9 +134,7 @@
     line-height: 1.6;
 }
 
-/* mobile */
 
-/* MOBILE */
 
 @media(max-width:768px) {
 
@@ -159,5 +154,276 @@
     .carousel-header p {
         font-size: 14px;
     }
+
+} */
+
+
+
+/* SECTION */
+
+.home-carousel{
+padding:80px 0;
+
+background:
+radial-gradient(circle at 20% 30%, rgba(37,99,235,0.2), transparent 40%),
+radial-gradient(circle at 80% 40%, rgba(147,51,234,0.2), transparent 40%),
+#020617;
+
+overflow:hidden;
+position:relative;
+}
+
+
+/* TECH GRID */
+
+.home-carousel::before{
+
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background-image:
+linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+background-size:90px 90px;
+
+pointer-events:none;
+
+}
+
+
+/* HEADER */
+
+.carousel-header{
+text-align:center;
+margin-bottom:50px;
+position:relative;
+z-index:2;
+}
+
+.carousel-header h2{
+
+font-size:34px;
+font-weight:700;
+
+color:white;
+
+margin-bottom:10px;
+
+position:relative;
+display:inline-block;
+
+}
+
+
+/* GRADIENT UNDERLINE */
+
+.carousel-header h2::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+left:50%;
+
+transform:translateX(-50%);
+
+width:70px;
+height:4px;
+
+background:linear-gradient(90deg,#2563eb,#9333ea);
+
+border-radius:4px;
+
+}
+
+
+/* SUBTITLE */
+
+.carousel-header p{
+
+color:#94a3b8;
+
+font-size:15px;
+
+max-width:600px;
+
+margin:auto;
+
+line-height:1.6;
+
+}
+
+
+/* ROW */
+
+.carousel-row{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+margin:20px 0;
+
+position:relative;
+z-index:2;
+
+}
+
+
+/* TRACK */
+
+.carousel-track{
+
+display:flex;
+
+gap:40px;
+
+width:max-content;
+
+animation-duration:25s;
+
+animation-timing-function:linear;
+
+animation-iteration-count:infinite;
+
+}
+
+
+/* LEFT animation */
+
+.carousel-row.left .carousel-track{
+animation-name:scrollLeft;
+}
+
+
+/* RIGHT animation */
+
+.carousel-row.right .carousel-track{
+animation-name:scrollRight;
+}
+
+
+/* ITEM */
+
+.carousel-item{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+/* glass card */
+
+background:rgba(255,255,255,0.05);
+
+padding:10px 22px;
+
+border-radius:30px;
+
+font-size:14px;
+
+color:#e2e8f0;
+
+border:1px solid rgba(255,255,255,0.08);
+
+backdrop-filter:blur(8px);
+
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+
+transition:.3s;
+
+}
+
+
+/* HOVER */
+
+.carousel-item:hover{
+
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+color:white;
+
+transform:translateY(-4px);
+
+box-shadow:
+0 10px 30px rgba(37,99,235,0.4),
+0 0 15px rgba(124,58,237,0.4);
+
+}
+
+
+/* ICON */
+
+.carousel-icon{
+
+font-size:18px;
+
+color:#38bdf8;
+
+transition:.3s;
+
+}
+
+
+.carousel-item:hover .carousel-icon{
+color:white;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes scrollLeft{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+
+@keyframes scrollRight{
+
+0%{
+transform:translateX(-50%);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.carousel-track{
+gap:25px;
+}
+
+.carousel-item{
+padding:8px 16px;
+font-size:13px;
+}
+
+.carousel-header h2{
+font-size:26px;
+}
+
+.carousel-header p{
+font-size:14px;
+}
 
 }
