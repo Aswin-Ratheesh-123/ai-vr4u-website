@@ -4,10 +4,13 @@ import { FaShieldAlt, FaCode, FaServer, FaMobileAlt, FaCloud } from "react-icons
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 
 function SoftwarePreview() {
+
+    const navigate = useNavigate();
 
     const services = [
 
@@ -122,7 +125,10 @@ function SoftwarePreview() {
 
             <div className="view-button">
 
-                <button className="card-btnn">
+                <button
+                    className="card-btnn"
+                    onClick={() => navigate("/software")}
+                >
                     View More Services
                 </button>
 

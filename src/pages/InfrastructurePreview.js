@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/SoftwarePreview.css";
-
+import { useNavigate } from "react-router-dom";
 import {
     FaServer,
     FaCloud,
@@ -15,6 +15,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 function InfrastructurePreview() {
+
+    const navigate = useNavigate();
 
     const services = [
 
@@ -129,7 +131,10 @@ function InfrastructurePreview() {
 
             <div className="view-button">
 
-                <button className="card-btnn">
+                <button
+                    className="card-btnn"
+                    onClick={() => navigate("/it-services")}
+                >
                     View More Services
                 </button>
 

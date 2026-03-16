@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/SoftwarePreview.css";
+import { useNavigate } from "react-router-dom";
 
 import {
     FaShieldAlt,
@@ -15,6 +16,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 function CyberSecurityPreview() {
+
+const navigate = useNavigate();
 
     const services = [
 
@@ -129,9 +132,12 @@ function CyberSecurityPreview() {
 
             <div className="view-button">
 
-                <button className="card-btnn">
-                    View More Services
-                </button>
+               <button
+        className="card-btnn"
+        onClick={() => navigate("/cybersecurity")}
+    >
+        View More Services
+    </button>
 
             </div>
 
